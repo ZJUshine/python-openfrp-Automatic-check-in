@@ -2,12 +2,13 @@ import time
 from selenium import webdriver
 
 # 设置Chrome驱动器的路径
-chrome_driver_path = 'E:\zjushine\python-openfrp-qiandao\chromedriver.exe'
+chrome_driver_path = 'XXX\chromedriver.exe'
 
 # 设置网站URL和登录信息
 url = 'https://console.openfrp.net/'
-username = 'zjushine'
-password = 'LUxuancun3641'
+# 输入用户名与密码
+username = 'XXX'
+password = 'XXX'
 
 # 创建Chrome浏览器驱动器实例
 driver = webdriver.Chrome(chrome_driver_path)
