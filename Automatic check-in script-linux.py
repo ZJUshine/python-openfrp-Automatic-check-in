@@ -10,10 +10,12 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
+
 # 设置网站URL和登录信息
 url = 'https://console.openfrp.net/'
-username = 'zjushine'
-password = 'LUxuancun3641'
+# 输入用户名与密码
+username = 'XXX'
+password = 'XXX'
 
 # 创建Chrome浏览器驱动器实例
 driver = webdriver.Chrome(options=chrome_options)
