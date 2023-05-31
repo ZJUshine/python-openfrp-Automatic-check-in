@@ -2,11 +2,10 @@ import time
 from selenium import webdriver
 
 # 设置Chrome驱动器的路径
-chrome_driver_path = 'XXX\chromedriver.exe'
+chrome_driver_path = 'E:\zjushine\python-openfrp-qiandao\chromedriver.exe'
 
 # 设置网站URL和登录信息
 url = 'https://console.openfrp.net/'
-# 输入用户名与密码
 username = 'XXX'
 password = 'XXX'
 
@@ -30,13 +29,13 @@ driver.find_element("xpath",'//*[@id="of-app"]/div/div[1]/form/div[3]/button').c
 time.sleep(5)
 
 # 进入个人中心
-driver.find_element("xpath",'//*[@id="of-app"]/div/div[1]/div[1]/ul/div/div[8]/li').click()
+driver.find_element("xpath",'//*[@id="of-app"]/div/div[1]/div[1]/ul/div[8]/li').click()
 
 # 等待页面加载完成
 time.sleep(5)
 
 # 执行签到操作
-driver.find_element("xpath",'//*[@id="of-app"]/div/div[2]/div/div/div/div[1]/div/div[2]/form/div[1]/div/div[1]/div[2]/button/span').click()
+driver.find_element("xpath",'//*[@id="of-app"]/div/div[2]/div/div/div/div[1]/div/div[2]/form/div[1]/div/div[1]/div[2]/button').click()
 
 # 关闭浏览器
 driver.quit()
